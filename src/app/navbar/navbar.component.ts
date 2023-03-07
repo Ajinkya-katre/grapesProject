@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  menus = ['home' , 'about' , 'product' ,'contact'];
+
+
 }

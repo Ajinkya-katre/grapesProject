@@ -1,15 +1,16 @@
-<div class="container-fluid p-0 ">
+<div class="container-fluid p-0 main-navbar">
     <div class="row ">
         <div class="col-md-8">
-            <ul class="navbar2">
-                <li class="navbar3"><a href="">Home</a></li>
-                <li class="navbar3"><a href="">About-Us</a></li>
-                <li class="navbar3"><a routerLink="tabledata">TablesData</a></li>
-                <li class="navbar3"><a href="">Contact-us</a></li>
-                <li class="navbar3"><a routerLink="rxjs">Rxjs</a></li>
+          <nav class="navbar ">
+            <a class="navbar-brand col-md-4" href="#">
+              <img src="../../assets/images/logo.png" width="80" height="50" class="d-inline-block align-top" alt="">
+
+            </a>
+            <ul class="nav" *ngFor="let menu of menus">
+              <li class="nav-item"><a  class="nav-link" href="">{{menu}}</a></li>
             </ul>
-        </div>
+          </nav>
+          </div>
     </div>
   </div>
-  
-  
+
