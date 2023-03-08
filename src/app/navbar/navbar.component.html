@@ -1,16 +1,19 @@
 <div class="container-fluid p-0 main-navbar">
-    <div class="row ">
-        <div class="col-md-8">
-          <nav class="navbar ">
-            <a class="navbar-brand col-md-4" href="#">
-              <img src="../../assets/images/logo.png" width="80" height="50" class="d-inline-block align-top" alt="">
-
-            </a>
-            <ul class="nav" *ngFor="let menu of menus">
-              <li class="nav-item"><a  class="nav-link" href="">{{menu}}</a></li>
-            </ul>
-          </nav>
-          </div>
+    <div class="row">
+        <div class="col-md-12 ">
+            <nav class="navbar sticky-top">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/images/logo.png" width="150" height="50" class="d-inline-block align-top"
+                        alt="Something Error">
+                </a>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-dark" routerLink="" routerLinkActive="active">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" routerLink="" >About</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" routerLink="" >Product</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" routerLink="" >Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" routerLink="" >Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-  </div>
-
+</div>
