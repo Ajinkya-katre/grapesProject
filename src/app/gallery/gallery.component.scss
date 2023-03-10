@@ -1,62 +1,73 @@
 html,body{
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  
+  &:hover{
+    flex: 7;
   }
+}
+.name{
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  padding-top: 140px;
+  font-family: popins;
+}
+.text{
+  background-image: url('https://st4.depositphotos.com/24248888/38404/i/450/depositphotos_384044036-stock-photo-grape-most-important-crop-grown.jpg');
+  height: 400px;
+  width: 100%;
+}
+.item-1 { 
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/18/19/48/grapes-2656259_960_720.jpg');
+}
+
+.item-2 { 
+  background-image: url('https://cdn.pixabay.com/photo/2019/06/21/20/19/grapes-4290308_960_720.jpg');
+}
+
+.item-3 { 
+  background-image: url('https://cdn.pixabay.com/photo/2020/08/21/18/53/healthy-5506822_960_720.jpghttps://cdn.pixabay.com/photo/2020/08/21/18/53/healthy-5506822_960_720.jpg');
+}
+
+.item-4 { 
+  background-image: url('https://cdn.pixabay.com/photo/2021/09/17/15/17/fruit-6633086_960_720.jpg');
+}
+
+.item-5 { 
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/23/18/53/grapes-2673874_960_720.jpg');
+}
+
+.social{
+  position: absolute;
+  right: 35px;
+  bottom: 0;
   
-  .container{
-    padding: 0;
-    margin: 0 auto;
+  img{
+    display: block;
+    width: 32px;
   }
-  
-  
-  
-  .gallery-wrap {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .item {
-    flex: 1;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-    transition: flex 0.8s ease;
-    
-    &:hover{
-      flex: 7;
-    }
-  }
-  
-  .item-1 { 
-    background-image: url('https://images.unsplash.com/photo-1499198116522-4a6235013d63?auto=format&fit=crop&w=1233&q=80');
-  }
-  
-  .item-2 { 
-    background-image: url('https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80');
-  }
-  
-  .item-3 { 
-    background-image: url('https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format&fit=crop&w=1234&q=80');
-  }
-  
-  .item-4 { 
-    background-image: url('https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80');
-  }
-  
-  .item-5 { 
-    background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80');
-  }
-  
-  .social{
-    position: absolute;
-    right: 35px;
-    bottom: 0;
-    
-    img{
-      display: block;
-      width: 32px;
-    }
-  }
+}
