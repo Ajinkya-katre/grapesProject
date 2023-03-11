@@ -8,7 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
-  {path:'',component:DashboardComponent},
+  {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'home',component:DashboardComponent},
   {path:'about',component:AboutComponent},
   {path:'product',component:ProductComponent},
