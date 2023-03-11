@@ -1,0 +1,28 @@
+.navbar-main{
+    width: 100%;
+}
+
+.main-navbar{
+    box-shadow: 0px 0px 3px grey;
+  
+    .row{
+      margin: 0px;
+    }
+  
+  }
+  
+  .nav > .nav-item{
+    border-bottom: 2px solid white;
+  }
+  
+  .nav > .nav-item:hover{
+    border-bottom: 2px solid red;
+  }
+  
+  .nav > .nav-item:active{
+    border-bottom: 2px solid red;
+  }
+  
+  .active{
+    border-bottom: 2px solid red;
+  }

@@ -1,4 +1,8 @@
 
+.gallery-wrapper > .row{
+  margin: 0px !important;
+}
+
 .name{
   text-align: center;
   color: white;
@@ -9,20 +13,6 @@
   background-image: url('https://st4.depositphotos.com/24248888/38404/i/450/depositphotos_384044036-stock-photo-grape-most-important-crop-grown.jpg');
   height: 400px;
   width: 100%;
-}
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600;700&display=swap');
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: popins;
-  margin:0;
-  height:100vh;
-  
-  color:#00000090;
-
 }
 
 .header {
