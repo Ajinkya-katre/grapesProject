@@ -1,0 +1,65 @@
+
+.name{
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  padding-top: 140px
+}
+.text{
+  background-image: url('https://st4.depositphotos.com/24248888/38404/i/450/depositphotos_384044036-stock-photo-grape-most-important-crop-grown.jpg');
+  height: 400px;
+  width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: popins;
+  margin:0;
+  height:100vh;
+  
+  color:#00000090;
+
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+#galley{
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
