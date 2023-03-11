@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
+  url:string = "assets/mobile.jpg";
+
+  changeImage(event:any)
+  {
+   this.url = event.target.src;
+  }
 
 }
