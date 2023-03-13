@@ -3,13 +3,13 @@
   margin: 0px !important;
 }
 
-.name{
+.heading{
   text-align: center;
   color: white;
   font-size: 4rem;
   padding-top: 140px
 }
-.text{
+.bg-source{
   background-image: url('https://st4.depositphotos.com/24248888/38404/i/450/depositphotos_384044036-stock-photo-grape-most-important-crop-grown.jpg');
   height: 400px;
   width: 100%;
@@ -29,26 +29,26 @@
   padding: 0 4px;
 }
 
-.column {
+.img-head {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
 }
 
-.column img {
+.img-head img {
   margin-top: 8px;
   vertical-align: middle;
 }
 
 @media (max-width: 800px) {
-  .column {
+  .img-head {
     flex: 50%;
     max-width: 50%;
   }
 }
 
 @media (max-width: 600px) {
-  .column {
+  .img-head {
     flex: 100%;
     max-width: 100%;
   }
