@@ -1,88 +1,59 @@
 <div class="container-fluid">
     <div class="">
-    <h1 class="head-center" >
-         <b>About</b></h1>
-    <p class="text-center">Grapes are a type of fruit that grow in clusters of 15 to 300, and can be crimson, black, dark blue, yellow, green, orange, and pink. "White" grapes are actually green in color, and are evolutionarily derived from the purple grape.
-</div>
+        <h1 class="head-center">
+            <b>About</b>
+        </h1>
+        <p class="text-center">Grapes are a type of fruit that grow in clusters of 15 to 300, and can be crimson, black,
+            dark blue, yellow, green, orange, and pink. "White" grapes are actually green in color, and are
+            evolutionarily derived from the purple grape.
+    </div>
 </div>
 <div class="container my-5">
-<div class="row">
-    <div class="col-md-5 col-sm-5">
-        <h1><b>New generation of farmers</b></h1>
-        <b>ABOUT</b><br><br>
-        <p>Cum nomen prarere, omnes peses amor pius, rusticus racanaes.Ubi est mirabilis gemna? Cum gabalium velum, omnes fugaes
-            Ubi est peritus devatio? A falsis, adelphis peritus apolloniates.Est raptus clabulare, cesaris. Cum pulchritudine manducare, omnes genetrixes captis bassus
-        </p><br>
-        <button class="btn btn-primary"> READ MORE </button>
-    </div>
-    <div class="col-md-7 col-sm-7">
-        <!-- <img class="img1 img-fluid " src="https://thelogicalindian.com/h-upload/2023/01/12/228470-untitled-design-1.webp"> -->
-        <div class="image">
-            <img class="img1" src="{{url}}" alt="Image">
+    <div class="row">
+        <div class="col-md-5 col-sm-5">
+            <h1><b>New generation of farmers</b></h1>
+            <b>ABOUT</b><br><br>
+            <p>Cum nomen prarere, omnes peses amor pius, rusticus racanaes.Ubi est mirabilis gemna? Cum gabalium velum,
+                omnes fugaes
+                Ubi est peritus devatio? A falsis, adelphis peritus apolloniates.Est raptus clabulare, cesaris. Cum
+                pulchritudine manducare, omnes genetrixes captis bassus
+            </p><br>
+            <button class="btn btn-primary"> READ MORE </button>
+        </div>
+        <div class="col-md-7 col-sm-7">
+            <div class="image">
+                <img class="img1" src="{{url}}" alt="Image">
+            </div>
+
+            <div class="row my-3" >
+                <div class="col-md-3 col-sm-3" *ngFor="let img of imgSrc">
+                    <div class="p1" (mouseover)="changeImage($event)">
+                        <img class="img img-fluid "
+                            src="{{img.url}}" />
+                    </div>
+                </div>
+                <!-- <div class="col-md-3 col-sm-3">
+                    <div class="p1" (mouseover)="changeImage($event)">
+                        <img class="img img-fluid "
+                            src="https://images.pexels.com/photos/1317917/pexels-photo-1317917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3">
+                    <div class="p1" (mouseover)="changeImage($event)">
+                        <img class="img img-fluid "
+                            src="https://images.pexels.com/photos/197910/pexels-photo-197910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="p1" (mouseover)="changeImage($event)">
+                        <img class="img img-fluid "
+                            src="https://images.pexels.com/photos/760280/pexels-photo-760280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    </div>
+                </div> -->
+            </div>
         </div>
 
-        <div class="row my-3">
-            <div class="col-md-3 col-sm-3">
-                <div class="p1" (mouseover)="changeImage($event)">
-                <img class="img img-fluid " src="http://mapandmagnets.com/wp-content/uploads/2018/03/plucked-grapes-nilgiris.jpg">
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3">
-                <div class="p1" (mouseover)="changeImage($event)">
-                <img class="img img-fluid " src="https://images.pexels.com/photos/1317917/pexels-photo-1317917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-3">
-                <div class="p1" (mouseover)="changeImage($event)">
-                <img class="img img-fluid " src="https://images.pexels.com/photos/197910/pexels-photo-197910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3" >
-                <div class="p1" (mouseover)="changeImage($event)">
-                <img class="img img-fluid " src="https://images.pexels.com/photos/760280/pexels-photo-760280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                </div>
-            </div>
-        </div>
     </div>
-
+    
 </div>
-<div class="Team my-4">
-<h2 style="text-align:center"><b>Our Team</b></h2>
-<div class="row my-4">
-<div class="col-md-4 col-sm-4">
-<img class="rounded-circle img-fluid" src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Jane">
-<div class="container">
-<h2>Jane Doe</h2>
-<p class="title">CEO & Founder</p>
-<p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<p>jane@example.com</p>
-</div>
-</div>
-
-<div class="col-md-4 col-sm-4">
-<img class="rounded-circle img-fluid" src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mike">
-<div class="container">
-<h2 >Mike Ross</h2>
-<p class="title">Art Director</p>
-<p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<p>mike@example.com</p>
-</div>
-</div>
-
-<div class="col-md-4 col-sm-4">
- <div class="cardimg">
-<img class="rounded-circle img-fluid" src="https://images.pexels.com/photos/7562313/pexels-photo-7562313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-</div>
-<div class="container">
-<h2>John Doe</h2>
-<p class="title">Designer</p>
-<p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<p>john@example.com</p>
-</div>
-</div>
-</div>
-</div>
-</div>
- 
-
