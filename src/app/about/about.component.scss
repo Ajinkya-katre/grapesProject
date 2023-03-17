@@ -1,48 +1,293 @@
-.container-fluid
-{
-    background-image: url(https://images.pexels.com/photos/15778459/pexels-photo-15778459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    width: 100%;
-    height:400px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom;
-    
-    
-}
-.head-center
-{   padding-top: 50px;
-    color: white;
-    text-align: center;
-}
-.text-center
-{   padding-top: 50px;
-    color:white;
-    font-weight:bolder;
-    font-size: 23px;
-}
+// // /* The actual timeline (the vertical ruler) */
+// .main-timeline-2 {
+//     position: relative;
+//   }
+  
+//   /* The actual timeline (the vertical ruler) */
+//   .main-timeline-2::after {
+//     content: "";
+//     position: absolute;
+//     width: 3px;
+//     background-color: #26c6da;
+//     top: 0;
+//     bottom: 0;
+//     left: 50%;
+//     margin-left: -3px;
+//   }
+  
+//   /* Container around content */
+//   .timeline-2 {
+//     position: relative;
+//     background-color: inherit;
+//     width: 50%;
+//   }
+  
+//   /* The circles on the timeline */
+//   .timeline-2::after {
+//     content: "";
+//     position: absolute;
+//     width: 25px;
+//     height: 25px;
+//     right: -11px;
+//     background-color: #26c6da;
+//     top: 15px;
+//     border-radius: 50%;
+//     z-index: 1;
+//   }
+  
+//   /* Place the container to the left */
+//   .left-2 {
+//     padding: 0px 40px 20px 0px;
+//     left: 0;
+//   }
+  
+//   /* Place the container to the right */
+//   .right-2 {
+//     padding: 0px 0px 20px 40px;
+//     left: 50%;
+//   }
+  
+//   /* Add arrows to the left container (pointing right) */
+//   .left-2::before {
+//     content: " ";
+//     position: absolute;
+//     top: 18px;
+//     z-index: 1;
+//     right: 30px;
+//     border: medium solid white;
+//     border-width: 10px 0 10px 10px;
+//     border-color: transparent transparent transparent white;
+//   }
+  
+//   /* Add arrows to the right container (pointing left) */
+//   .right-2::before {
+//     content: " ";
+//     position: absolute;
+//     top: 18px;
+//     z-index: 1;
+//     left: 30px;
+//     border: medium solid white;
+//     border-width: 10px 10px 10px 0;
+//     border-color: transparent white transparent transparent;
+//   }
+  
+//   /* Fix the circle for containers on the right side */
+//   .right-2::after {
+//     left: -14px;
+//   }
+  
+//   /* Media queries - Responsive timeline on screens less than 600px wide */
+//   @media screen and (max-width: 600px) {
+//     /* Place the timelime to the left */
+//     .main-timeline-2::after {
+//       left: 31px;
+//     }
+  
+//     /* Full-width containers */
+//     .timeline-2 {
+//       width: 100%;
+//       padding-left: 70px;
+//       padding-right: 25px;
+//     }
+  
+//     /* Make sure that all arrows are pointing leftwards */
+//     .timeline-2::before {
+//       left: 60px;
+//       border: medium solid white;
+//       border-width: 10px 10px 10px 0;
+//       border-color: transparent white transparent transparent;
+//     }
+  
+//     /* Make sure all circles are at the same spot */
+//     .left-2::after,
+//     .right-2::after {
+//       left: 18px;
+//     }
+  
+//     .left-2::before {
+//       right: auto;
+//     }
+  
+//     /* Make all right containers behave like the left ones */
+//     .right-2 {
+//       left: 0%;
+//     }
+//   }
+  
 
+// .target
+// {
+//     height:300px;
+//     width:100%;
+//     cursor: pointer;
 
-// .cardimg{
-//     background-image: url(https://cdn.pixabay.com/photo/2016/11/21/11/23/grapes-1844745_960_720.jpg);
+// }
+// #changeimg
+// {
+//     height:100px;
+   
+//     cursor: pointer;
+//     align-items: center;
+//     justify-content: center;
+//     display: flex;
+// }
+// #feedback
+// {
+//     width:90%;
+ 
 // }
 
-.img1
-{
-    height:300px;
-    width:100%;
-    cursor: pointer;
 
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.timeline
+{
+  position: relative;
+  max-width: 1200px;
+  margin:  100px auto;
+  background-color: rgba(246, 242, 242, 0.631);
+}
+.container
+{
+padding: 10px 50px;
+position: relative;
+width: 50%;
+animation: movedown 1s linear forwards;
+opacity: 0;
+}
+@keyframes movedown
+{
+  0%
+  {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.text-box
+{
+  padding: 20px 30px;
+  background: #fff;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.left-container
+{
+  left: 0;
+}
+.right-container
+{
+  left: 50%;
 }
 .img
 {
-    height:100px;
-    width:100%;
-    cursor: pointer;
+  height: 30px;
+  width: 30px;
 }
-.rounded-circle
+.container img{
+  position: absolute;
+  width: 40px;
+  border-radius: 50px;
+  right: -20px;
+  top:32px;
+  z-index: -1;
+}
+
+.right-container img 
 {
-    width:90%;
-    height: 300px;
- 
+left: -20px;
 }
-   
+
+.timeline::after
+{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #fff;
+  top:0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 1;
+  animation: moveline 6s linear forwards;
+}
+@keyframes moveline
+{
+  0%
+  {
+    height: 0;
+  }
+  100%
+  {
+    height: 100%;
+  }
+}
+
+.text-box h2{
+  font-weight: 600;
+}
+.text-box small
+{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.left-container-arrow
+{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top:15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fff;
+  right: -15px;
+}
+.right-container-arrow
+{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top:15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fff;
+  left: -15px;
+}
+.container:nth-child(1)
+{
+  animation-delay: 0s;
+}
+.container:nth-child(2)
+{
+  animation-delay: 1s;
+}
+.container:nth-child(3)
+{
+  animation-delay: 2s;
+}
+.container:nth-child(4)
+{
+  animation-delay: 3s;
+}
+.container:nth-child(5)
+{
+  animation-delay: 4s;
+}
+
+.container:nth-child(6)
+{
+  animation-delay: 5s;
+}
+
