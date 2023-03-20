@@ -191,8 +191,8 @@ opacity: 0;
 }
 .img
 {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
 }
 .container img{
   position: absolute;
@@ -200,7 +200,7 @@ opacity: 0;
   border-radius: 50px;
   right: -20px;
   top:32px;
-  z-index: -1;
+  z-index: 3;
 }
 
 .right-container img 
@@ -247,7 +247,7 @@ left: -20px;
   width: 0;
   position: absolute;
   top: 28px;
-  z-index: 1;
+  z-index: -.1;
   border-top:15px solid transparent;
   border-bottom: 15px solid transparent;
   border-left: 15px solid #fff;
@@ -259,7 +259,7 @@ left: -20px;
   width: 0;
   position: absolute;
   top: 28px;
-  z-index: 1;
+  z-index: 2;
   border-top:15px solid transparent;
   border-bottom: 15px solid transparent;
   border-right: 15px solid #fff;
