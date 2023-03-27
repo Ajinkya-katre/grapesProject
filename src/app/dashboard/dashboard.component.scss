@@ -3,3 +3,97 @@
 }
 
 #client-testimonial-carousel {min-height: 200px;}
+
+
+//suscribe to newsletter
+
+
+
+.subscription.bg-white {
+    background: none;
+}
+
+.bg-white {
+    // background-color: #fff!important;
+}
+
+.subscription.bg-white .subscription-wrapper {
+    background: #fff;
+}
+
+.subscription-wrapper {
+    padding: 70px 50px;
+    z-index: 1;
+    width: 100%;
+    background: linear-gradient(80deg, #0030cc 0%, #00a4db 100%);
+    
+}
+
+.subscription-wrapper {
+    box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1) !important;
+}
+
+.subscription-content {
+}
+
+h3, .h3 {
+    font-size: 30px;
+}
+
+.flex-fill {
+    -ms-flex: 1 1 auto!important;
+    flex: 1 1 auto!important;
+}
+
+.subscription.bg-white .form-control {
+    border: 1px solid #ebebeb !important;
+}
+
+.subscription-wrapper .form-control {
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 45px;
+}
+
+.subscription-wrapper .form-control:focus {
+    background: rgba(255, 255, 255, 0.1);
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: 0;
+    color: #fff;
+}
+
+
+
+.btn {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    padding: 18px 45px;
+    border-radius: 45px;
+    font-weight: 500;
+    border: 1px solid;
+    position: relative;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+}
+
+.btn-primary:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 100%;
+    background: linear-gradient(45deg, #00a8f4 0%, #02d1a1 100%);
+    z-index: -1;
+    transition: ease 0.3s;
+}

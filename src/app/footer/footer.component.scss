@@ -25,19 +25,10 @@ a:hover {
 }
 
 footer {
-  padding: 2rem 0;
-  background-color: #212529;
-  // .container .row:not(:last-child) {
-  //   padding-bottom: 2rem;
-  // }
+  background: url('../../assets/images/footer-background.jpg') no-repeat center;
+  padding: 2rem;
+  min-height: 300px;
 }
-
-.footer-column:not(:first-child) {
-    padding-top: 2rem;
-    @media (min-width: 768px) {
-      padding-top: 0rem;
-    }
-  }
 
 .footer-column {
   text-align: center;
@@ -109,3 +100,4 @@ footer .quick-links {
   color: white;
   padding: 2rem 0;
 }
+
