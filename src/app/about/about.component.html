@@ -3,12 +3,12 @@
         <h1 class="head-center">
             <b>About</b>
         </h1>
-        <p class="text-center">Grapes are a type of fruit that grow in clusters of 15 to 300, and can be crimson, black,
+        <p class="about-wrapper-para">Grapes are a type of fruit that grow in clusters of 15 to 300, and can be crimson, black,
             dark blue, yellow, green, orange, and pink. "White" grapes are actually green in color, and are
             evolutionarily derived from the purple grape.
     </div>
 </div>
-<div class="container my-5">
+<div class="container-fluid my-5">
     <div class="row">
         <div class="col-lg-5 col-md-5 col-sm-12 col-12">
             <h1><b>New generation of farmers</b></h1>
@@ -21,13 +21,13 @@
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12 col-12">
             <div class="image">
-                <img class="img1" src="{{url}}" alt="Image">
+                <img class="img1 img-fluid" src="{{url}}" alt="Image">
             </div>
 
             <div class="row my-3">
-                <div class="col-md-3 col-sm-3" *ngFor="let img of imgSrc">
+                <div class="col-md-3 col-sm-3 col-3" *ngFor="let img of imgSrc">
                     <div class="p1" (mouseover)="changeImage($event)">
-                        <img class="img img-fluid " src="{{img.url}}" />
+                        <img class="imghover img-fluid" src="{{img.url}}" />
                     </div>
                 </div>
             </div>
@@ -40,11 +40,11 @@
 <div class="container-fluid my-3">
     <h2><b>FAQ</b></h2>
     <div class="row">
-        <div class="col-md-6 col-12 ">
+        <div class="ccol-lg-6 col-md-6 col-sm-12 col-12 ">
             <img src="../../assets/images/about1.jpg" class="img-fluid rounded" height="300" width="100%" alt="something is error">
         </div>
 
-    <div class="col-md-6 col-12 ">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
