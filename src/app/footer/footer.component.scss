@@ -16,9 +16,10 @@ a:hover {
   background: $primary-orange;
   text-shadow: none;
 }
-
+.footer-content{
+  background-color: #212529;
+}
 footer {
-  background: url('../../assets/images/footer-background.jpg') no-repeat center;
   padding: 2rem;
   min-height: 300px;
 }

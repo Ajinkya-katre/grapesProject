@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit{
 
   currentYear:any;
+  footerBackground = '../assets/images/footer-background.jpg'
 
   ngOnInit(): void {
      this.currentYear = document.getElementById('demo');
