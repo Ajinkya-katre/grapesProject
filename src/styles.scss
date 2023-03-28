@@ -7,4 +7,26 @@
 
 body{
     font-family: 'Poppins', sans-serif; 
+    scroll-behavior: smooth;
 }
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color:  #00a8f4 #fff;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(45deg, #00a8f4 0%, #02d1a1 100%) ;
+    // background: linear-gradient(to top, gold, orange);
+    border-radius: 20px;
+    // border: 3px solid orange;
+  }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // // /* The actual timeline (the vertical ruler) */
 // .main-timeline-2 {
 //     position: relative;
@@ -137,6 +138,34 @@
  
 // }
 
+=======
+.about-wrapper
+{
+    background-image: url(https://images.pexels.com/photos/15778459/pexels-photo-15778459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    width: 100%;
+    min-height:620px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;    
+}
+.head-center
+{   padding-top: 50px;
+    color: #000;
+    text-align: center;
+}
+.about-wrapper-para
+{   padding-top: 19rem;
+    color:#fff;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.img1
+{
+    height:300px;
+    width:100%;
+    cursor: pointer;
+>>>>>>> 33d84bdd5a700f6c288e1f95146182d495555171
 
 *
 {
@@ -189,8 +218,9 @@ opacity: 0;
 {
   left: 50%;
 }
-.img
+.imghover
 {
+<<<<<<< HEAD
   height: 40px;
   width: 40px;
 }
@@ -291,3 +321,9 @@ left: -20px;
   animation-delay: 5s;
 }
 
+=======
+    height:100px;
+    width:100%;
+    cursor: pointer;
+}
+>>>>>>> 33d84bdd5a700f6c288e1f95146182d495555171
