@@ -1,9 +1,9 @@
-<div class="container p-0 gallery-wrapper">
+<div class="container p-0 galler mt-3 y-wrapper">
   <!-- <div class="bg-source">
     <h2 class="heading">Gallery</h2>
   </div> -->
 
-  <ng-image-slider [images]="imageObject" #nav   [imageSize]="{width: '380px',height: '250px'}"></ng-image-slider>
+  <ng-image-slider [images]="imageObject" #nav  lazyLoad="imageObject"  [imageSize]="{width: '380px',height: '250px'}"></ng-image-slider>
 
 </div>
 
@@ -11,7 +11,7 @@
   <div class="row my-3">
     <div class="col-md-6">
       <div >
-        <iframe width="100%" height="300" src="https://www.youtube.com/embed/Tva4Cf-NKPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="100%" height="300" loading="lazy" src="https://www.youtube.com/embed/Tva4Cf-NKPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
     <div class="col-md-6">
@@ -32,7 +32,7 @@
     </div>
     <div class="col-md-6">
       <div >
-        <iframe width="100%" height="300" src="https://www.youtube.com/embed/9JT-_nV6Jr4"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="100%" height="300" loading="lazy" src="https://www.youtube.com/embed/9JT-_nV6Jr4"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
     
@@ -41,7 +41,7 @@
   <div class="row my-3">
     <div class="col-md-6">
       <div >
-        <iframe width="100%" height="300" src="https://www.youtube.com/embed/FsHQKf_HNiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="100%" height="300"  loading="lazy" src="https://www.youtube.com/embed/FsHQKf_HNiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
     <div class="col-md-6">

@@ -11,6 +11,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { NgImageSliderModule } from 'ng-image-slider';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    ReactiveFormsModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

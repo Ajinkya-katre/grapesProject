@@ -1,3 +1,9 @@
+
+.navbar{
+  background-color: #000;
+  color: #fff;
+}
+
 .navbar-main{
     width: 100%;
 }
@@ -25,6 +31,8 @@
   
   .active{
     font-weight: bold;
+  color: #fff !important;
+
   }
 
 .nav-link {
@@ -48,3 +56,6 @@
     //transition: width .3s;
 }
 
+.navbar-nav > .nav-item> .nav-link {
+  color: #fff !important;
+}

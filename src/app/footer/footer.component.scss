@@ -16,10 +16,9 @@ a:hover {
   background: $primary-orange;
   text-shadow: none;
 }
-.footer-content{
-  background-color: #212529;
-}
+
 footer {
+  background: url('../../assets/images/footer-background.jpg') no-repeat center;
   padding: 2rem;
   min-height: 300px;
 }
@@ -95,3 +94,8 @@ footer .quick-links {
   padding: 2rem 0;
 }
 
+
+.input-newsletter{
+  padding: 7px;
+  border-radius: 5px;
+}
