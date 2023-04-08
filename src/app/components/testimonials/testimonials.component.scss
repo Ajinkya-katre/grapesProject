@@ -1,10 +1,15 @@
 .testimonials{
     background-color: #222328;
     color: #fff;
-    min-height: 500px ;
+    min-height: 600px ;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url('../../../assets/images/footer-background.jpg') no-repeat fixed center ;
+}
+
+.testimonials-img{
+    height: 150px;
+    width: 150px;
 }
