@@ -111,3 +111,30 @@ h3, .h3 {
     // filter: grayscale(10);
     z-index: -1;
 }
+
+.product{
+    min-height:200px;
+    width: 100%;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+
+.gif{
+    height: 100px;
+    width: 100px;
+}
+
+.organicImg{
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+    animation: imgRotate infinite 1s;
+}
+
+@keyframes imgRotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
