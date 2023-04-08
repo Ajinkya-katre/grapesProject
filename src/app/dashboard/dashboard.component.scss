@@ -88,7 +88,7 @@ h3, .h3 {
     left: 0;
     width: 102%;
     height: 100%;
-    background: linear-gradient(45deg, #00a8f4 0%, #02d1a1 100%);
+    background: black;
     z-index: -1;
     transition: ease 0.3s;
 }
@@ -120,6 +120,16 @@ h3, .h3 {
 .icon{
     display: flex;
     justify-content: center;
+}
+
+
+.product-content{
+    transition: all .5s;
+
+}
+
+.product-content:hover{
+    transform: scale(1.03);
 }
 
 .gif{

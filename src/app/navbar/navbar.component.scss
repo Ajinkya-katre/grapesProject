@@ -17,22 +17,9 @@
   
   }
   
-  // .nav > .nav-item{
-  //   border-bottom: 2px solid white;
-  // }
-  
-  // .nav > .nav-item:hover{
-  //   border-bottom: 2px solid red;
-  // }
-  
-  // .nav > .nav-item:active{
-  //   border-bottom: 2px solid red;
-  // }
-  
   .active{
     font-weight: bold;
-  color: #fff !important;
-
+    color: #fff !important;
   }
 
 .nav-link {
@@ -53,9 +40,12 @@
 
 .nav-link:hover::after {
     width: 100%;
-    //transition: width .3s;
 }
 
 .navbar-nav > .nav-item> .nav-link {
   color: #fff !important;
+}
+
+.navbar-toggler{
+  background-color: #fff;
 }

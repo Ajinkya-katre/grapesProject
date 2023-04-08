@@ -13,6 +13,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     ProductComponent,
     GalleryComponent,
     ContactComponent,
-    DashboardComponent
+    DashboardComponent,
+    TestimonialsComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:'about',component:AboutComponent},
   {path:'product',component:ProductComponent},
   {path:'gallery',component:GalleryComponent},
-  {path:'contact',component:ContactComponent}
+  {path:'contact',component:ContactComponent},
+  {path:'privacy-policy',component:PrivacyPolicyComponent},
 ];
 
 @NgModule({
